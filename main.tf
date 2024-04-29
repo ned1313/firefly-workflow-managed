@@ -28,6 +28,13 @@ locals {
         app = "10.65.1.0/24"
       }
     }
+    production = {
+      vnet_address_space = ["10.66.0.0/16"]
+      subnets = {
+        web = "10.66.0.0/24"
+        app = "10.66.1.0/24"
+      }
+    }
   }
 }
 
